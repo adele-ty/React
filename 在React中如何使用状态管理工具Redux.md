@@ -74,7 +74,7 @@ ReactDOM.render(
   document.getElementById('root')
 )
 ```
-用 <Provider> 包裹整个根组件 <App>，并传入 store：<Provider store={store}>。任何调用 useSelector 或 useDispatch 的 React 组件都可以访问 <Provider> 中的 store。
+用 Provider 包裹整个根组件 App，并传入 store。任何调用 useSelector 或 useDispatch 的 React 组件都可以访问 Provider 中的 store。
 ### 在组件中使用State
 * 使用 useSelector 提取数据
 useSelector 这个 hooks 让我们的组件从 Redux 的 store 状态树中提取它需要的任何数据。我们可以编写“selector” 函数，它以 state 作为参数并返回状态树的一部分。每当一个 action 被 dispatch 并且 Redux store 被更新时，useSelector 将重新运行我们的选择器函数。如果选择器返回的值与上次不同，useSelector 将确保我们的组件使用新值重新渲染。
@@ -97,3 +97,4 @@ const dispatch = useDispatch()
   +
 </button>
 ```
+详细请查看[Redux官方文档](https://cn.redux.js.org/tutorials/essentials/part-2-app-structure#%E5%BA%94%E7%94%A8%E7%9B%AE%E5%BD%95)
