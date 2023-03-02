@@ -1,8 +1,9 @@
-Redux 是一种状态管理工具，它可以帮助 React 应用程序更好地管理和共享状态。使用 Redux，您可以将应用程序的状态集中存储在单个存储库（Store）中，并通过派发（Dispatch）操作来更新该存储库中的状态。
+Redux 是一种状态管理工具，它可以帮助 React 应用程序更好地管理和共享状态。使用 Redux，您可以将应用程序的状态集中存储在单个存储库（Store）中，并通过派发（Dispatch）操作来更新该存储库中的状态。  
 以下是在 React 应用程序中使用 Redux 的基本步骤：  
 ### 创建Store
 作用：Store 存储了整个应用程序的状态。应用程序中的所有组件都可以访问 Store 中的数据，以便获取和修改应用程序状态。Store 中的状态数据是只读的，应用程序中的所有状态修改都必须通过派发（Dispatch）一个 action 来触发。每当状态发生变化时，Store 都会通知订阅它的组件进行更新。  
-Redux store 是使用 Redux Toolkit 中的 configureStore 函数创建的。configureStore 要求我们传入一个 reducer 参数。应用程序可能由许多不同的特性组成，每个特性都可能有自己的 reducer 函数。当调用configureStore 时，我们可以传入一个对象中的所有不同的 reducer。对象中的键名 key 将定义最终状态树中的键名 key。
+
+Redux store 是使用 Redux Toolkit 中的 configureStore 函数创建的。configureStore 要求我们传入一个 reducer 参数。应用程序可能由许多不同的特性组成，每个特性都可能有自己的 reducer 函数。当调用configureStore 时，我们可以传入一个对象中的所有不同的 reducer。对象中的键名 key 将定义最终状态树中的键名 key。  
 示例代码如下：  
 ```
 // store.js
