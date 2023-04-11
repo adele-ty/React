@@ -4,6 +4,7 @@
 * 访问本地存储：在组件渲染期间，可能需要访问本地存储来读取或写入数据。  
 * 改变DOM：在组件渲染期间，可能需要改变DOM，例如添加或删除元素、更改元素的属性等。  
 * 订阅事件：在组件渲染期间，可能需要订阅事件，例如窗口大小改变、鼠标移动等。  
+
 副作用可能会导致应用程序的状态变得不可预测，因此需要在组件渲染完成后进行清理。React提供了一些钩子函数，例如useEffect和useLayoutEffect，用于处理副作用。
 # useEffect
 Effect Hook 可以让你在函数组件中执行副作用操作。可以把它看做 componentDidMount，componentDidUpdate 和 componentWillUnmount 这三个函数的组合。
