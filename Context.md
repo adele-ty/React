@@ -39,4 +39,4 @@ function App() {
 使用Context的好处是，我们不必将计数器的值一层层地传递给子组件，而是直接从Context中获取。这可以让代码更加简洁和易读。  
 然而，使用Context也可能会带来一些问题。特别是在组件数量较多或者组件层级较深的情况下，Context可能会导致代码难以理解和维护。此外，Context也可能会影响性能，因为数据的变化会触发整个组件树的重新渲染。因此，在使用Context时，需要考虑好它的使用场景和影响，并尽量避免滥用。  
 
-!(React之Context的变迁与背后实现)[https://github.com/mqyqingfeng/Blog/issues/319]
+![React之Context的变迁与背后实现](https://github.com/mqyqingfeng/Blog/issues/319)
