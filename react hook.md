@@ -8,4 +8,4 @@
 
 注意：React 提供了一些特殊的 Hook（如 useEffect 和 useCallback），可以用于处理循环和条件语句中的副作用。这些特殊的 Hook 在设计上是为了解决在函数组件中处理副作用的常见问题，并且已经经过优化和验证。但是，普通的状态 Hook（如 useState）仍然不能在循环或条件语句中使用。  
 
-!(一篇看懂React hook)[https://github.com/ascoders/blog/issues/29]
+参考[一篇看懂React hook](https://github.com/ascoders/blog/issues/29)
