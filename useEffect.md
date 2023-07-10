@@ -28,8 +28,8 @@ useEffect(() => {
 # useLayoutEffect
 其函数签名与 useEffect 相同，但它会在所有的 DOM 变更之后同步调用 effect。  
 
-与useEffect的区别在于，useLayoutEffect会在组件渲染前同步执行，而useEffect是在组件渲染后异步执行。这意味着，如果我们需要进行一些DOM操作，例如计算元素尺寸、调整布局等，使用useLayoutEffect可以确保操作在组件渲染前完成，避免用户看到闪烁或者布局异常的情况。
+与useEffect的区别在于，useLayoutEffect会在组件渲染函数执行之后屏幕重绘之前同步执行，而useEffect是在组件渲染函数执行完毕并且屏幕绘制完成之后异步执行。这意味着，如果我们需要进行一些DOM操作，例如计算元素尺寸、调整布局等，使用useLayoutEffect可以确保操作在组件渲染前完成，避免用户看到闪烁或者布局异常的情况。
 
-需要注意的是，由于useLayoutEffect会在组件渲染前同步执行，因此如果useLayoutEffect的操作过于耗时，会导致页面卡顿或者出现其他问题。在使用useLayoutEffect时，应该尽量避免进行复杂的操作，以确保页面性能和用户体验。如果我们只需要在组件渲染后进行一些副作用操作，可以使用useEffect来替代useLayoutEffect。
+需要注意的是，由于useLayoutEffect会在组件绘制前同步执行，因此如果useLayoutEffect的操作过于耗时，会导致页面卡顿或者出现其他问题。在使用useLayoutEffect时，应该尽量避免进行复杂的操作，以确保页面性能和用户体验。如果我们只需要在组件渲染后进行一些副作用操作，可以使用useEffect来替代useLayoutEffect。
 
 详细请移步[官网](https://react.zcopy.site/docs/hooks-effect.html)
