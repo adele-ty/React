@@ -97,4 +97,5 @@ const dispatch = useDispatch()
   +
 </button>
 ```
-详细请查看[Redux官方文档](https://cn.redux.js.org/tutorials/essentials/part-2-app-structure#%E5%BA%94%E7%94%A8%E7%9B%AE%E5%BD%95)
+详细请查看[Redux官方文档](https://cn.redux.js.org/tutorials/essentials/part-2-app-structure#%E5%BA%94%E7%94%A8%E7%9B%AE%E5%BD%95)  
+查看[Redux的设计思想](https://zhuanlan.zhihu.com/p/53599723)
